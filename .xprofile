@@ -1,0 +1,13 @@
+#!/bin/sh
+
+xrandr --output DisplayPort-0 --mode 1920x1080 --rate 165
+
+xwallpaper --zoom ~/fon.png
+
+setxkbmap -layout us,ru -option grp:alt_shift_toggle
+
+gentoo-pipewire-launcher &
+
+picom --config ~/.config/picom/picom.conf &
+
+slstatus &
